@@ -1,8 +1,8 @@
 {
-  "version": "0.1.0-review",
-  "source_commit": "72a466cc48d70a3ef794bc33b3763dc5978ef3ac",
-  "exported_at_utc": "2026-11-04T14:05:54.760840+00:00",
-  "edition": "评审试玩版",
+  "version": "0.2.0-review-r2",
+  "source_commit": "0a09cf95d024934f9ba6da430d98e45676d9c2b7",
+  "exported_at_utc": "2026-11-04T14:57:14.257635+00:00",
+  "edition": "R2评审试玩版",
   "changes_from_source": [
     "Only runtime files and public notices exported",
     "Internal reports, tests, evidence and debug globals excluded",
@@ -11,8 +11,8 @@
   "runtime_sha256": {
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "NOTICE.md": "1ddfbd1582ab28ef731dcd6f32199608220af714102f5df8c3fe3051c20e6768",
-    "README.md": "d741e0ac4cd174c5e0aecb3f15d816b78f64b5756db0720b382db4f9a0d87769",
-    "app.mjs": "58a652d758560ecf35d63e0a0da5aed7bad25222f2405b29d0ccee9843f00217",
+    "README.md": "ab851d4ef61d81313385f69a1b556fb22b3d09c89a89d1b5e652e4c0f8d0d081",
+    "app.mjs": "6198675916eb876c3eadf28ce311a2ea0b0575dfb827eabc2182487a62863dbd",
     "art.mjs": "60d7e8b9a268126bd46cf29fb861290cc68d7e4fb998d8edacf80b5c4ddd8ec8",
     "audio/sort.wav": "fc03b5e56417aefde1d5d2e707acc65cce3220c93125cd3ff613c10986914bb6",
     "audio/store.wav": "47308c5f84e68868e58b9b594013a0aa19852178dfd378a6f2161f6485c15565",
@@ -21,8 +21,8 @@
     "audio/warning.wav": "09e687f234290c794da42f1244bfd8810c5cd99112d66997a67393b5946ed467",
     "audio.mjs": "19a2147c5d79dafa795bbf574adaa4d4820666d0452828d66ab9b0b532d61dd0",
     "core.mjs": "11928fdd6802d61e86b11c43b8d867fe246988d1893b3bb97a468e724c5b18c2",
-    "index.html": "dd1ba0b596674eb97192cbe8480f740f6edb98a66813cb3a638524682fe610ea",
+    "index.html": "88a804520847b855c4ab0a3dc4f653a3590196c8b8a34b9f50634a53b74fd64d",
     "level.mjs": "0c80228062b2e2678714644f1adb1ebbe5938ec245ddf03560dfea125e06013f",
-    "style.css": "39b6859bd90c25ce8340c9a19c594862f03b6cb8fe741ddd11757a6259c2a18e"
+    "style.css": "1de385a05bf9aadf1a1fe66e23acc77b93a2c825517ddc5f4b3496326e0871a0"
   }
 }

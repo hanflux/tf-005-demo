@@ -1,15 +1,24 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f7edd9"><title>收拾就完了 · 评审试玩版</title><link rel="stylesheet" href="style.css"></head>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f7edd9"><title>收拾就完了 · R2 评审试玩版</title><link rel="stylesheet" href="style.css?v=r2"></head>
 <body><main>
-<header><div><small>SSJWL / 评审试玩版 · 01</small><h1>收拾就完了<span>！</span></h1></div><button id="restart" class="quiet">重来</button></header>
+<header><div><small>SSJWL / 评审试玩版 · 01</small><h1>收拾就完了<span>！</span></h1></div><div class="header-actions"><button id="quick-mute" class="quiet" aria-label="一键静音" aria-pressed="false">静音</button><button id="restart" class="quiet">重来</button></div></header>
 <section class="intro"><b>猫咪拆过的客厅</b><span id="progress">0 / 20 已归位</span></section>
 <section id="containers" aria-label="当前分类容器"></section>
-<section class="room" aria-label="客厅物品"><div class="room-label">挑上面的拿 · 被压住的先等等</div><div class="rug"></div><div id="board"></div><div class="cat-doodle" aria-hidden="true">⌁ 猫：我没动喵 ⌁</div></section>
+<section class="room" aria-label="猫咪拆过的客厅，待收拾"><div class="room-label">挑上面的拿 · 被压住的先等等</div>
+<svg class="room-scene" viewBox="0 0 356 448" preserveAspectRatio="none" aria-hidden="true">
+ <path d="M0 0h356v102H0Z" fill="#f5e6ce"/><path d="M0 99h356v6H0Z" fill="#d6b891"/>
+ <g class="sofa"><rect x="61" y="31" width="214" height="51" rx="15" fill="#9faf9c" stroke="#7f927f" stroke-width="2"/><path d="M78 52h180v30H78Z" fill="#b5c3ac"/><rect x="51" y="54" width="29" height="35" rx="9" fill="#92a58e"/><rect x="255" y="54" width="29" height="35" rx="9" fill="#92a58e"/><path d="M81 89v8m176-8v8" stroke="#8d7357" stroke-width="5"/><rect class="cushion" x="106" y="37" width="32" height="27" rx="6" fill="#e4b589" stroke="#cda078"/><rect class="cushion second" x="199" y="42" width="30" height="25" rx="5" fill="#edc77d" stroke="#d6b06c"/></g>
+ <g stroke="#bc9a70" stroke-width="2"><rect x="304" y="33" width="36" height="58" rx="3" fill="#dabd95"/><path d="M307 55h30m-30 20h30"/><rect x="310" y="59" width="21" height="11" rx="2" fill="#f0dfbd"/></g>
+ <path d="M15 60h23l-4 28H19Z" fill="#c59172"/><path d="M26 63V30m0 17Q7 48 11 33q17 0 15 14m0-8q18 0 14-17-15 1-14 17" fill="#9daa7e" stroke="#8f9e70" stroke-width="2"/>
+ <g class="room-mess" fill="#bc9c77" opacity=".35"><path d="M27 275q-9-7-14 1t5 12q12 1 9-13Z"/><circle cx="11" cy="265" r="3"/><circle cx="18" cy="261" r="3"/><circle cx="26" cy="264" r="3"/><path d="M58 313q-9-7-14 1t5 12q12 1 9-13Z"/><circle cx="42" cy="303" r="3"/><circle cx="49" cy="299" r="3"/><circle cx="57" cy="302" r="3"/><path d="M20 393l16-6 6 17-19 3Z" fill="#f7f0d5" stroke="#c6a77a"/></g>
+ <g class="tidy-basket"><path d="M17 375h77l-7 39H24Z" fill="#cda575" stroke="#b68b5d" stroke-width="2"/><path d="M20 385h70m-67 11h65m-62 11h60" stroke="#ead3ad" stroke-width="3"/><path d="M29 375v-16h26v16m5 0v-23h18v23" fill="#a6b79c" stroke="#8c9f82"/><path d="M66 352v-8h8v8" fill="#edc077"/></g>
+ <g class="tidy-stars" fill="#dca34c"><path d="M114 177l4 11 11 4-11 4-4 11-4-11-11-4 11-4Z"/><path d="M252 232l3 8 8 3-8 3-3 8-3-8-8-3 8-3Z"/><path d="M292 151l3 7 7 3-7 3-3 7-3-7-7-3 7-3Z"/></g>
+</svg><div class="rug"></div><div id="board"></div><div class="tidy-note" aria-hidden="true"><b>收好啦，舒服了！</b><span>20 件归位 · 暂存清空</span></div><div class="cat-doodle" aria-hidden="true">⌁ 猫：我没动喵 ⌁</div></section>
 <section class="storage"><div class="storage-title"><b>临时放这儿</b><span id="capacity"></span></div><div id="tray" aria-label="暂存区"></div><p>新分类开放后，匹配物品会自动归位。</p></section>
 <div id="feedback" role="status" aria-live="polite"></div>
-<details class="audio-panel" open><summary>声音设置 · <span id="audio-status">点一下开启声音</span></summary><div class="audio-row"><label><input id="music-on" type="checkbox">音乐</label><input id="music-volume" aria-label="音乐音量" type="range" min="0" max="100"><output id="music-value"></output></div><div class="audio-row"><label><input id="sfx-on" type="checkbox">音效</label><input id="sfx-volume" aria-label="音效音量" type="range" min="0" max="100"><output id="sfx-value"></output></div><button id="audio-start" class="quiet">开启 / 重试声音</button></details>
-<footer><span>先看分类，再决定拿谁。</span><span>P1 · 原创声音</span></footer>
+<details class="audio-panel"><summary>声音设置 · <span id="audio-status">点一下开启声音</span></summary><div class="audio-row"><label><input id="music-on" type="checkbox">音乐</label><input id="music-volume" aria-label="音乐音量" type="range" min="0" max="100"><output id="music-value"></output></div><div class="audio-row"><label><input id="sfx-on" type="checkbox">音效</label><input id="sfx-volume" aria-label="音效音量" type="range" min="0" max="100"><output id="sfx-value"></output></div><button id="audio-start" class="quiet">开启 / 重试声音</button></details>
+<footer><span>先看分类，再决定拿谁。</span><span>R2 · 客厅收拾中</span></footer>
 </main>
 <dialog id="tutorial"><div class="eyebrow">乱得要命，收得上头！</div><h2>先收哪一个？</h2><p>点物品：上方已开放的分类直接收走，其他物品占一个暂存格。</p><p><b>暂存只有 3 格，第 4 件会爆仓。</b><br>被压住的物品要先移走上层；收满一类就会换新箱。</p><p class="hint">试试先拿纸盒，再拿下面的小火车。</p><button id="start" class="primary">开收！</button></dialog>
 <dialog id="result"><div id="result-icon"></div><h2 id="result-title"></h2><p id="result-text"></p><button id="again" class="primary">再收一局</button></dialog>
-<script type="module" src="app.mjs"></script></body></html>
+<script type="module" src="app.mjs?v=r2"></script></body></html>
