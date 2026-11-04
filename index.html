@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f7edd9"><title>收拾就完了 · 评审试玩版</title><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<header><div><small>SSJWL / 评审试玩版 · 01</small><h1>收拾就完了<span>！</span></h1></div><button id="restart" class="quiet">重来</button></header>
+<section class="intro"><b>猫咪拆过的客厅</b><span id="progress">0 / 20 已归位</span></section>
+<section id="containers" aria-label="当前分类容器"></section>
+<section class="room" aria-label="客厅物品"><div class="room-label">挑上面的拿 · 被压住的先等等</div><div class="rug"></div><div id="board"></div><div class="cat-doodle" aria-hidden="true">⌁ 猫：我没动喵 ⌁</div></section>
+<section class="storage"><div class="storage-title"><b>临时放这儿</b><span id="capacity"></span></div><div id="tray" aria-label="暂存区"></div><p>新分类开放后，匹配物品会自动归位。</p></section>
+<div id="feedback" role="status" aria-live="polite"></div>
+<details class="audio-panel" open><summary>声音设置 · <span id="audio-status">点一下开启声音</span></summary><div class="audio-row"><label><input id="music-on" type="checkbox">音乐</label><input id="music-volume" aria-label="音乐音量" type="range" min="0" max="100"><output id="music-value"></output></div><div class="audio-row"><label><input id="sfx-on" type="checkbox">音效</label><input id="sfx-volume" aria-label="音效音量" type="range" min="0" max="100"><output id="sfx-value"></output></div><button id="audio-start" class="quiet">开启 / 重试声音</button></details>
+<footer><span>先看分类，再决定拿谁。</span><span>P1 · 原创声音</span></footer>
+</main>
+<dialog id="tutorial"><div class="eyebrow">乱得要命，收得上头！</div><h2>先收哪一个？</h2><p>点物品：上方已开放的分类直接收走，其他物品占一个暂存格。</p><p><b>暂存只有 3 格，第 4 件会爆仓。</b><br>被压住的物品要先移走上层；收满一类就会换新箱。</p><p class="hint">试试先拿纸盒，再拿下面的小火车。</p><button id="start" class="primary">开收！</button></dialog>
+<dialog id="result"><div id="result-icon"></div><h2 id="result-title"></h2><p id="result-text"></p><button id="again" class="primary">再收一局</button></dialog>
+<script type="module" src="app.mjs"></script></body></html>
