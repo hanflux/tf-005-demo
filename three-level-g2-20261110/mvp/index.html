@@ -1,0 +1,18 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>收拾就完了 · 三关内部试玩</title><link rel="stylesheet" href="style.css"></head><body>
+<main>
+<header><div><small>留一点时间，让家轻松起来</small><h1>收拾就完了<span>！</span></h1></div><button id="sound-open" aria-label="声音设置">声音 ♪</button></header>
+<nav><button id="levels-open">选关 <span id="level-number">1 / 3</span></button><span id="session-progress">本次完成 0 / 3</span><button id="reset">免费重开 ↺</button></nav>
+<div class="scene-title"><b id="level-title"></b><span id="progress"></span></div>
+<section id="bins" aria-label="当前可收分类"></section><div id="later" aria-label="未开放分类"></div>
+<section class="room" aria-label="散落物件的房间"><img id="room-image" src="../baseline/visual-r3/r3-2/exports/room-plate.webp" alt="原创暖阳客厅"><div class="scene-decor" aria-hidden="true"><div class="window"></div><div class="desk-back"></div><div class="desk-surface"></div><div class="moving-box one"></div><div class="moving-box two"></div><div class="wall-note"></div></div><div id="board" aria-label="可收拾物件"></div><div id="tidy-note"><b>收好啦，舒服了</b><span>给下一件小事，留一点空位。</span></div><div class="room-tag" id="scene-caption"></div></section>
+<section class="storage"><div><b>临时放这里</b><span id="pressure"></span></div><div id="tray" aria-label="三个暂存槽"></div><p>新分类开放后，匹配物件自动归位；第4件不匹配物品会失败</p></section>
+<div id="feedback" role="status" aria-live="polite"></div>
+<section class="history"><div><b>最近 5 步</b><button id="history-open">查看经过</button></div><ol id="history-list"></ol></section>
+<footer>三关内部候选 · 手机与真人试玩待验收</footer>
+</main>
+<dialog id="levels-dialog"><h2>今天想收哪里？</h2><div id="level-options"></div><p>随时选关、免费重开；切关会清空当前这局。通关记录仅保留在本次打开期间。</p><button data-close="levels-dialog">继续当前局</button></dialog>
+<dialog id="sound-dialog"><h2>听着轻快一点</h2><p id="audio-status">点一下开始声音</p><button id="audio-start">开启 / 继续声音</button><label><input type="checkbox" id="music-on">背景音乐</label><label>音乐音量 <output id="music-value"></output><input type="range" id="music-volume" min="0" max="100" step="1"></label><label><input type="checkbox" id="sfx-on">收拾音效</label><label>音效音量 <output id="sfx-value"></output><input type="range" id="sfx-volume" min="0" max="100" step="1"></label><p>设置自动记住。切到后台暂停，回来继续。</p><button data-close="sound-dialog">收好设置</button></dialog>
+<dialog id="history-dialog"><h2>刚才怎么收的</h2><div id="history-detail"></div><button data-close="history-dialog">回到房间</button></dialog>
+<dialog id="result"><small id="result-kicker"></small><h2 id="result-title"></h2><p id="result-message"></p><div id="failure-review"></div><button id="next">下一关</button><button id="again">免费再收一局</button><button id="result-levels">选择关卡</button></dialog>
+<dialog id="final"><small>把三个角落，都照顾好了</small><h2>今天收拾完成</h2><div id="final-summary"></div><p>没有倒计时，也没有重开成本。谢谢你给家留了一点轻松。</p><button id="final-levels">挑一关再收</button><button data-close="final">看看整洁的房间</button></dialog>
+<script type="module" src="app.mjs"></script></body></html>
