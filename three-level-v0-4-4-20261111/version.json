@@ -1,0 +1,248 @@
+{
+  "version": "0.4.4-internal",
+  "label": "0.4.4 视觉候选，待 Neo 复测",
+  "status": "UI_CANDIDATE_READY_FOR_NEO",
+  "runtimeFingerprintSHA256": "eb4b81f0ea9a4bfb7bcf17244f31aa15f921daf7a3745dd579854759cc6abc9e",
+  "runtimeFiles": [
+    {
+      "path": "baseline/audio/sort.wav",
+      "bytes": 11068,
+      "sha256": "fc03b5e56417aefde1d5d2e707acc65cce3220c93125cd3ff613c10986914bb6"
+    },
+    {
+      "path": "baseline/audio/store.wav",
+      "bytes": 7542,
+      "sha256": "47308c5f84e68868e58b9b594013a0aa19852178dfd378a6f2161f6485c15565"
+    },
+    {
+      "path": "baseline/audio/tidy-loop.wav",
+      "bytes": 1323044,
+      "sha256": "62cfc019cc2d631867e6069dea6c2dc23612dfb9fafa993c18acbd49428575ea"
+    },
+    {
+      "path": "baseline/audio/victory.wav",
+      "bytes": 37528,
+      "sha256": "42ba244e01508e850263ae3d4025c2eb88552e7a4f5880e3aa2546db8f8e0141"
+    },
+    {
+      "path": "baseline/audio/warning.wav",
+      "bytes": 18566,
+      "sha256": "09e687f234290c794da42f1244bfd8810c5cd99112d66997a67393b5946ed467"
+    },
+    {
+      "path": "baseline/level.mjs",
+      "bytes": 1440,
+      "sha256": "13767d4152c8f69d555f0776744add77fb135a63963de7e3c73a51ac3817a091"
+    },
+    {
+      "path": "baseline/visual-r3/r3-2/exports/c1-catfood-256.png",
+      "bytes": 74302,
+      "sha256": "6daf9edc6983deb35d83ba42f819adf54b3e7a884362192a63a55abd9d9a8aa8"
+    },
+    {
+      "path": "baseline/visual-r3/r3-2/exports/c2-wand-256.png",
+      "bytes": 32449,
+      "sha256": "9f8b638fbd3ac1403f5a14f275e351a0042024f028caea386fb67938cc6a2b30"
+    },
+    {
+      "path": "baseline/visual-r3/r3-2/exports/c3-scratcher-256.png",
+      "bytes": 57650,
+      "sha256": "a33c8dbbd1946df5fad5f7adf193a741146ce95c3409db960a9b6f446b399d75"
+    },
+    {
+      "path": "baseline/visual-r3/r3-2/exports/c4-bowl-128.png",
+      "bytes": 17178,
+      "sha256": "73eb7b9d1543f1b978582a698a34a75a90160aaee762048a3a62bb6325e1f992"
+    },
+    {
+      "path": "baseline/visual-r3/r3-2/exports/c5-yarn-256.png",
+      "bytes": 73153,
+      "sha256": "1f45d08bb0d5971465dd6737bb98ac02e0fb7908a37f39f4dc8d1f9b0ffe3058"
+    },
+    {
+      "path": "baseline/visual-r3/r3-2/exports/d1-mug-128.png",
+      "bytes": 16537,
+      "sha256": "4a00a3fc7540c67626371c7b6e22ad1ba80f1a7f0c52e3237a9648d43e963e84"
+    },
+    {
+      "path": "baseline/visual-r3/r3-2/exports/d2-clock-256.png",
+      "bytes": 53859,
+      "sha256": "6ea3c84e596199eb71adcd6d80a91e9e1937f98610510abbf0dcc2f139f7828c"
+    },
+    {
+      "path": "baseline/visual-r3/r3-2/exports/d3-glove-256.png",
+      "bytes": 53388,
+      "sha256": "e94b0a1d7fb2767324baf4d686ac5459b88a0ff448eabb66e685c982f21d01ad"
+    },
+    {
+      "path": "baseline/visual-r3/r3-2/exports/d4-umbrella-256.png",
+      "bytes": 38580,
+      "sha256": "ddbb653957d446d84855854232c39360c4588a7c54fc6c55179409fa4df15960"
+    },
+    {
+      "path": "baseline/visual-r3/r3-2/exports/d5-towel-256.png",
+      "bytes": 73045,
+      "sha256": "b090756d837f75b398fbe308ce0ef4192e33fdb381f427f733cca0abf05bdbcd"
+    },
+    {
+      "path": "baseline/visual-r3/r3-2/exports/r1-box-256.png",
+      "bytes": 54676,
+      "sha256": "8529288d5e449ef8ceb06fa7c55dc18445be1c501fcb3a09fadf88ab01147b4c"
+    },
+    {
+      "path": "baseline/visual-r3/r3-2/exports/r2-bottle-128.png",
+      "bytes": 12945,
+      "sha256": "fcb0014c450e90e5973066076f86c4c2a0614e0aecb27bf51520e395af3228e5"
+    },
+    {
+      "path": "baseline/visual-r3/r3-2/exports/r3-paperbag-256.png",
+      "bytes": 52284,
+      "sha256": "4eb7b6957cf440d097e853087060ae968fd42f7d787262ebd94aeb45b6cbef98"
+    },
+    {
+      "path": "baseline/visual-r3/r3-2/exports/r4-newspaper-256.png",
+      "bytes": 52779,
+      "sha256": "8e462237c2de0e4b80d7350dbb642dfe8ef8633f65ae4b8d3045b9e8756f07ae"
+    },
+    {
+      "path": "baseline/visual-r3/r3-2/exports/r5-can-256.png",
+      "bytes": 37230,
+      "sha256": "146acddd60090ee38e1fa83a808ff80d2c7a7718d3137b86b76e7cb92805152c"
+    },
+    {
+      "path": "baseline/visual-r3/r3-2/exports/room-plate.webp",
+      "bytes": 140546,
+      "sha256": "b8b9239e8feb548acd3aba98ca4acba5c1f1d778b032b365375d1ed550609347"
+    },
+    {
+      "path": "baseline/visual-r3/r3-2/exports/t1-train-256.png",
+      "bytes": 64937,
+      "sha256": "14ae06c01c97ca7baba514abbcaf7757776692e9676e9c188718af6b654720ae"
+    },
+    {
+      "path": "baseline/visual-r3/r3-2/exports/t2-blocks-128.png",
+      "bytes": 12047,
+      "sha256": "ae1a98322875be399e895cf3c3cbf43d3d8c7ad3d4e03df89d6b20c1da688160"
+    },
+    {
+      "path": "baseline/visual-r3/r3-2/exports/t3-top-256.png",
+      "bytes": 48351,
+      "sha256": "e3ad083688cc750c08ce575e8fc60ab849fa9ce6f6c47bdbe36102415e900fec"
+    },
+    {
+      "path": "baseline/visual-r3/r3-2/exports/t4-pinwheel-256.png",
+      "bytes": 44415,
+      "sha256": "2b3deb6d8dcc8669f1956b04ab6453efa3ddeafb0427e6d5be1395541f2fe0ee"
+    },
+    {
+      "path": "baseline/visual-r3/r3-2/exports/t5-car-256.png",
+      "bytes": 65412,
+      "sha256": "f2d1e59d14a8772da235f119ae51f1638185e7a9f8b71040d43ff38c4052cae0"
+    },
+    {
+      "path": "baseline/visual-r3/r3-2/layout.mjs",
+      "bytes": 1662,
+      "sha256": "fcbe5155860942f1acf696bfce0a557113e9f27990053c669949301a774636fc"
+    },
+    {
+      "path": "mvp/app.mjs",
+      "bytes": 23763,
+      "sha256": "f5ffafdcd99a41472a2d5d45c1f9c78a92ffe5de8a9b056cfa0813aa22b4f0cd"
+    },
+    {
+      "path": "mvp/audio.mjs",
+      "bytes": 4316,
+      "sha256": "cafe7e03083113df01f14d6fc2873d5f74ca66b8576106babc5380468663593c"
+    },
+    {
+      "path": "mvp/containers.mjs",
+      "bytes": 791,
+      "sha256": "a4ae66af2b6465f4181f33ff53d2308c80151aa0a2333d4a87ff16b8eea1a4d1"
+    },
+    {
+      "path": "mvp/core.mjs",
+      "bytes": 2414,
+      "sha256": "32b9c593705ecb0587f93c5672940b6a9a5d0d60e55544796d5489b5353f88c0"
+    },
+    {
+      "path": "mvp/index.html",
+      "bytes": 5028,
+      "sha256": "9f7f37faffd4d80a10d3eaeb6ed20eb756201d79746e842a01f8f2f1d7f1ad0c"
+    },
+    {
+      "path": "mvp/levels.mjs",
+      "bytes": 3772,
+      "sha256": "80a1db1f029d38595af2615c9d373d0be4edc7593dd63a079afb12df6af96ec5"
+    },
+    {
+      "path": "mvp/route-records.mjs",
+      "bytes": 1258,
+      "sha256": "a0470f6be145b6179ed63d6ab4d1785bbde1355eb789b7a92b66b944002bc841"
+    },
+    {
+      "path": "mvp/scene-art.mjs",
+      "bytes": 832,
+      "sha256": "d29df38a742f5724858ee83d7e0a756b17a047df6dfca1516dd7d253e614362e"
+    },
+    {
+      "path": "mvp/scene-art/cable.webp",
+      "bytes": 23556,
+      "sha256": "3a124e6494547cb533eb84a5ccef1d4c03b012e1d97e0e89cc84051e75d28f5c"
+    },
+    {
+      "path": "mvp/scene-art/desk-wide.webp",
+      "bytes": 191902,
+      "sha256": "a9f4612c6d933bb5b51dc94b7c0216d4de988b62257e37e3927e46a7d8da5ca0"
+    },
+    {
+      "path": "mvp/scene-art/desk.webp",
+      "bytes": 184806,
+      "sha256": "ec961c886532c3149c582c7a73e2986f19e97af1c2466193623ac6f2ce92b194"
+    },
+    {
+      "path": "mvp/scene-art/folder.webp",
+      "bytes": 18018,
+      "sha256": "abc3806a84717cd9866ff2766b9275c50f52149aa6e1e8d6a299e236fd2adcca"
+    },
+    {
+      "path": "mvp/scene-art/headphones.webp",
+      "bytes": 24870,
+      "sha256": "90993e1e4865248ffedaf3b4322a6cc3c9f97e067a6daab708b69983c5218c72"
+    },
+    {
+      "path": "mvp/scene-art/moving-wide.webp",
+      "bytes": 340400,
+      "sha256": "b89359df8fc98f685798ae44c015a095dc6aeb7738518216cb20e839f4729ff6"
+    },
+    {
+      "path": "mvp/scene-art/moving.webp",
+      "bytes": 355586,
+      "sha256": "2d8d3c298848283f5012083808de30377fd67a070088905ec9c349fb05ad5e37"
+    },
+    {
+      "path": "mvp/scene-art/notebook.webp",
+      "bytes": 20620,
+      "sha256": "ef02f102639d49f2a50eb1fe5d45c3899449ab49720a6bc1f870f3b3cf40d296"
+    },
+    {
+      "path": "mvp/scene-art/pencil-cup.webp",
+      "bytes": 17288,
+      "sha256": "3f71b1c75b090e26345eb5fa02369ffab02f6e9413225cddd7d0c90baf5baaac"
+    },
+    {
+      "path": "mvp/scene-art/storage-box.webp",
+      "bytes": 21390,
+      "sha256": "317846f1051a3a6ea2079ecc0757cbd17b95d6b06acc1cc9e9dd5a635fe7379e"
+    },
+    {
+      "path": "mvp/scene-layout.mjs",
+      "bytes": 4098,
+      "sha256": "454d61ccaf6bb8cbaa46d104b0ebc822c9c2c97f295286bbe970390723844dcd"
+    },
+    {
+      "path": "mvp/style.css",
+      "bytes": 9541,
+      "sha256": "6218c1af69a1162a6b27e8efa84b9544ba5a76e90b0deb8c8c805facc9c3236c"
+    }
+  ]
+}
