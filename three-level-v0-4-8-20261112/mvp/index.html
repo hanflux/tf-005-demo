@@ -1,0 +1,21 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>收拾就完了 · 0.4.8 · L1 交互反馈版</title><link rel="stylesheet" href="style.css"></head><body>
+<main>
+<section class="hud" aria-label="分类与暂存">
+<div class="hud-top"><button id="settings-open" aria-label="打开设置菜单"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="m10 2 4 0 .7 3 2 .9 2.8-.9 2 3.5-2.2 2.1v2.8l2.2 2.1-2 3.5-2.8-.9-2 .9L14 22h-4l-.7-3-2-.9-2.8.9-2-3.5 2.2-2.1v-2.8L2.5 8.5l2-3.5 2.8.9 2-.9Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="12" r="3.5" fill="none" stroke="currentColor" stroke-width="1.7"/></svg></button><b id="level-title"></b><span id="progress"></span></div>
+<section id="bins" aria-label="当前可收分类"></section>
+<section class="storage" aria-label="五个暂存位置"><div id="tray"></div></section>
+<div class="hud-meta"><span id="later"></span><span id="pressure"></span></div>
+</section>
+<div class="room-viewport" role="region" aria-label="完整房间，点击物件即可收拾">
+<section class="room"><div id="living-floor" aria-hidden="true"><div class="tidy-sun"></div><div class="tidy-spark one">✦</div><div class="tidy-spark two">✦</div></div><img id="room-image" src="./art-046/living.webp" alt="原创暖阳客厅"><div id="scene-plate" aria-hidden="true"></div><div class="scene-decor" aria-hidden="true"><div class="window"></div><div class="desk-back"></div><div class="desk-surface"></div><div class="moving-box one"></div><div class="moving-box two"></div><div class="wall-note"></div><div class="desk-keepsakes"></div></div><div id="board" aria-label="可收拾物件"></div><div id="tidy-note"><b>收好啦，舒服了</b><span>给下一件小事，留一点空位。</span></div></section>
+</div>
+<div id="feedback" role="status" aria-live="polite"></div>
+</main>
+<dialog id="settings-dialog"><h2>歇一小会儿</h2><p><span id="level-number"></span> · <span id="session-progress"></span></p><div class="menu-options"><button id="sound-open">声音设置</button><button id="levels-open">选择关卡</button><button id="reset">免费重开本关</button><button id="history-open">最近五步</button><button id="rules-open">怎么玩</button></div><button data-close="settings-dialog">继续收拾</button><small class="build-note">0.4.8 · L1 落箱反馈版：保留客厅与五格规则；飞行更舒缓，落点音效和轻回弹同步。第二三关保持原样。手机与真人手感待验收</small></dialog>
+<dialog id="rules-dialog"><h2>慢慢收，刚刚好</h2><p id="rules-capacity">点物件即可自动分类，开放的两只箱子会直接接走它；还没有箱子的物件先放在五个暂存位。</p><p id="rules-overflow">新分类开放后，会自动接走匹配的暂存物。五个格子放满仍可继续收当前分类，第6件不匹配的物件放不下，这局就结束了。</p><p id="rules-ad">广告位暂未开放，仅是占位，不提供解锁、奖励或复活功能。</p><p>被压住的物件会点名上面的遮挡者。可以随时免费重开；桌面关可尝试更省位置的路线。本机最佳与声音偏好仅存在浏览器，不会上传。</p><button data-close="rules-dialog">知道了，继续收拾</button></dialog>
+<dialog id="levels-dialog"><h2>今天想收哪里？</h2><div id="level-options"></div><p>随时选关、免费重开；切关会清空当前这局。通关标记仅保留在本次打开期间；桌面关最佳暂存记录保存在本机。</p><button data-close="levels-dialog">继续当前局</button></dialog>
+<dialog id="sound-dialog"><h2>听着轻快一点</h2><p id="audio-status">点一下开始声音</p><button id="audio-start">开启 / 继续声音</button><label><input type="checkbox" id="music-on">背景音乐</label><label for="music-volume">音乐音量 <output id="music-value" for="music-volume"></output></label><input type="range" id="music-volume" min="0" max="100" step="1" aria-describedby="music-value"><label><input type="checkbox" id="sfx-on">收拾音效</label><label for="sfx-volume">音效音量 <output id="sfx-value" for="sfx-volume"></output></label><input type="range" id="sfx-volume" min="0" max="100" step="1" aria-describedby="sfx-value"><p>设置自动记住。切到后台暂停，回来继续。</p><button data-close="sound-dialog">收好设置</button></dialog>
+<dialog id="history-dialog"><h2>刚才怎么收的</h2><div id="history-detail"></div><button data-close="history-dialog">回到房间</button></dialog>
+<dialog id="result"><small id="result-kicker"></small><h2 id="result-title"></h2><p id="result-message"></p><section id="route-results" aria-label="本次路线成果" hidden></section><div id="failure-review"></div><button id="next">下一关</button><button id="again">免费再收一局</button><button id="result-levels">选择关卡</button></dialog>
+<dialog id="final"><small>把三个角落，都照顾好了</small><h2>今天收拾完成</h2><div id="final-summary"></div><p>没有倒计时，也没有重开成本。谢谢你给家留了一点轻松。</p><button id="final-levels">挑一关再收</button><button data-close="final">看看整洁的房间</button></dialog>
+<script type="module" src="app.mjs"></script></body></html>
